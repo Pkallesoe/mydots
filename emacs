@@ -1,13 +1,20 @@
 (setq custom-file "~/.emacs-custom.el")
 (load custom-file)
 
-(require 'package) ;; You might already have this line
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/"))
-(when (< emacs-major-version 24)
-  ;; For important compatibility libraries like cl-lib
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
-(package-initialize) ;; You might already have this line
+;; packages
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("org" . "http://orgmode.org/elpa/")
+                        ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")))
+(package-initialize)
+
+(defun require-package (package)
+  (setq-default highlight-tabs t)
+  "Install given PACKAGE."
+  (unless (package-installed-p package)
+    (unless (assoc package package-archive-contents)
+      (package-refresh-contents))
+    (package-install package)))
 
 (require 'smart-compile)
 (add-to-list 'smart-compile-alist
