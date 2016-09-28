@@ -1,4 +1,4 @@
-(setq custom-file "~/.emacs-custom.el")
+(setq custom-file "~/.emacs.d/emacs-custom.el")
 (load custom-file)
 
 (require 'package) ;; You might already have this line
