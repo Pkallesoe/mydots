@@ -11,7 +11,7 @@
  '(custom-enabled-themes (quote (misterioso)))
  '(display-time-24hr-format t)
  '(global-linum-mode t)
- '(package-selected-packages (quote (avy smart-compile))))
+ '(package-selected-packages (quote (minimap key-chord evil avy smart-compile))))
 ;; '(display-time-day-and-date t))
 
 (custom-set-faces
