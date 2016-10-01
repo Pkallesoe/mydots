@@ -38,4 +38,3 @@
   (lambda ()
     (linum-mode -1)
   ))
-(hl-line-mode 1)
