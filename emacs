@@ -38,4 +38,5 @@
   (lambda ()
     (linum-mode -1)
   ))
+;; Highlight current line
 (hl-line-mode 1)
