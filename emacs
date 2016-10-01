@@ -40,3 +40,6 @@
   ))
 ;; Highlight current line
 (hl-line-mode 1)
+
+(global-set-key (kbd "C-x g") 'magit-status)
+(require 'evil-magit)
