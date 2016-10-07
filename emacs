@@ -43,3 +43,17 @@
 
 (global-set-key (kbd "C-x g") 'magit-status)
 (require 'evil-magit)
+
+;;Eclim
+(require 'eclim)
+(global-eclim-mode 1)
+(require 'eclimd)
+
+(require 'company)
+(require 'company-emacs-eclim)
+(setq company-dabbrev-downcase nil) ;; Make company work nicely with caseSensitive words.
+(company-emacs-eclim-setup)
+(global-company-mode t)
+
+(custom-set-variables
+  '(eclim-executable "~/.eclipse/org.eclipse.platform_4.6.1_155965261_linux_gtk_x86_64/eclim"))

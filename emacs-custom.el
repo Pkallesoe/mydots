@@ -13,7 +13,7 @@
  '(global-linum-mode t)
  '(package-selected-packages
    (quote
-    (evil-magit magit minimap key-chord evil avy smart-compile))))
+    (company-emacs-eclim eclim company ## evil-magit magit minimap key-chord evil avy smart-compile))))
 ;; '(display-time-day-and-date t))
 
 (custom-set-faces
