@@ -1,6 +1,5 @@
 (setq custom-file "~/.emacs.d/emacs-custom.el")
 (load custom-file)
-
 (eval-when-compile (require 'cl))
 (require 'package)
   (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
@@ -57,3 +56,24 @@
 
 (custom-set-variables
   '(eclim-executable "~/.eclipse/org.eclipse.platform_4.6.1_155965261_linux_gtk_x86_64/eclim"))
+
+(load-file "~/.emacs.d/sensible-defaults.el")
+(sensible-defaults/increase-gc-threshold)
+(sensible-defaults/show-matching-parens)
+(sensible-defaults/backup-to-temp-directory)
+(sensible-defaults/delete-trailing-whitespace)
+(sensible-defaults/treat-camelcase-as-separate-words)
+(sensible-defaults/automatically-follow-symlinks)
+(sensible-defaults/make-scripts-executable)
+(sensible-defaults/offer-to-create-parent-directories-on-save)
+(sensible-defaults/confirm-closing-emacs)
+(sensible-defaults/make-dired-file-sizes-human-readable)
+(sensible-defaults/shorten-yes-or-no)
+(sensible-defaults/refresh-buffers-when-files-change)
+(sensible-defaults/set-default-line-length-to 80)
+;; Keybindings
+;; M-; comment/uncomment region.
+(sensible-defaults/bind-commenting-and-uncommenting)
+
+;; C-+ C-- to increase/decrease font size.
+(sensible-defaults/bind-keys-to-change-text-size)
