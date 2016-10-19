@@ -57,3 +57,7 @@
 
 (custom-set-variables
   '(eclim-executable "~/.eclipse/org.eclipse.platform_4.6.1_155965261_linux_gtk_x86_64/eclim"))
+
+;; Org-mode
+(global-set-key "<F12>" 'org-agenda)
+(global-set-key "<F9>" 'calendar)

@@ -10,10 +10,13 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (misterioso)))
  '(display-time-24hr-format t)
+ '(eclim-executable
+   "~/.eclipse/org.eclipse.platform_4.6.1_155965261_linux_gtk_x86_64/eclim")
  '(global-linum-mode t)
+ '(org-agenda-files (quote ("~/docs/orgs/org-test.org")))
  '(package-selected-packages
    (quote
-    (company-emacs-eclim eclim company ## evil-magit magit minimap key-chord evil avy smart-compile))))
+    (org-bullets company-emacs-eclim eclim company ## evil-magit magit minimap key-chord evil avy smart-compile))))
 ;; '(display-time-day-and-date t))
 
 (custom-set-faces
